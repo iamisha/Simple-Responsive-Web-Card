@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.card {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  background: teal;
+  color: aliceblue;
+  text-align: center;
+  padding: 3em;
+}
+.social-list {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-around;
+  width: 125px;
+  margin: 0 auto;
+}
+.profile-img {
+  border-radius: 50%;
+  border: 6px solid darkgray;
+  height: 200px;
+}
+.social-link {
+  color: royalblue;
+  opacity: 0.5;
+  font-size: 1.125rem;
+}
+.social-link:hover,
+.social-link:focus {
+  opacity: 1;
+}
+.profile-name {
+  font-size: 3rem;
+  line-height: 0;
+  letter-spacing: 1px;
+}
+/*code to make the line under the name*/
+.profile-name::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 3em;
+  background: darkgray;
+  margin: 1.6rem auto;
+  opacity: 0.45;
+}
+.profile-position {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: darkgray;
+  margin-bottom: 3em;
+}
+.profile-body {
+  font-weight: 300px;
+  opacity: 0.8;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+/*code to make the business card responsive starts from here*/
+@media (min-width: 600px) {
+  .card {
+    flex-direction: row;
+  }
+  .profile-main {
+    text-align: left;
+    margin-left: 2em;
+  }
+  .profile-name::after {
+    margin-left: 0;
+    margin-top: 0.15em;
+  }
+  .profile-name {
+    line-height: 0.9;
+  }
+}
