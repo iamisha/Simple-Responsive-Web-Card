@@ -1,3 +1,7 @@
+body {
+  background-color: darkslategray;
+  margin: 2px;
+}
 * {
   box-sizing: border-box;
 }
@@ -10,7 +14,7 @@ body {
   place-items: center;
 }
 .card {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 20px 20px 10px black;
   width: 80%;
   max-width: 600px;
   display: flex;
@@ -34,20 +38,17 @@ body {
   border: 6px solid darkgray;
   height: 200px;
 }
-.social-link {
-  color: royalblue;
-  opacity: 0.5;
-  font-size: 1.125rem;
-}
-.social-link:hover,
-.social-link:focus {
-  opacity: 1;
+ul li:hover {
+  color: palevioletred;
+  transform: scale(1.5);
 }
 .profile-name {
   font-size: 3rem;
   line-height: 0;
   letter-spacing: 1px;
+  color: aliceblue;
 }
+
 /*code to make the line under the name*/
 .profile-name::after {
   content: "";
