@@ -90,3 +90,7 @@ ul li:hover {
     line-height: 0.9;
   }
 }
+footer a {
+  text-decoration: none;
+  color: darkgrey;
+}
